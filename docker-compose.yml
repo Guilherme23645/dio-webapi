@@ -11,6 +11,7 @@ services:
     restart: unless-stopped
     environment:
       POSTGRES_PASSWORD: /run/secrets/pg_password
+      POSTGRES_DB: client_database
     volumes:
       - /api-data:/var/lib/postgresql/data
     healthcheck:
