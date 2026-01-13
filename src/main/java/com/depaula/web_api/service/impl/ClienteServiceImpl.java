@@ -1,15 +1,16 @@
 package com.depaula.web_api.service.impl;
 
-import com.depaula.web_api.model.Cliente;
-import com.depaula.web_api.model.ClienteRepository;
-import com.depaula.web_api.model.Endereco;
-import com.depaula.web_api.model.EnderecoRepository;
-import com.depaula.web_api.service.ClienteService;
-import com.depaula.web_api.service.ViaCepService;
+import java.util.Optional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.Optional;
+import com.depaula.web_api.model.Cliente;
+import com.depaula.web_api.model.Endereco;
+import com.depaula.web_api.repository.ClienteRepository;
+import com.depaula.web_api.repository.EnderecoRepository;
+import com.depaula.web_api.service.ClienteService;
+import com.depaula.web_api.service.ViaCepService;
 
 @Service
 public class ClienteServiceImpl implements ClienteService {
