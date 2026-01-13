@@ -39,6 +39,11 @@ chmod +x run.sh
   - Insert the password within the pg_password.txt file, watch out for carriage returns (CRLF)
   - Insert the database's name, "client_database"
   - Press the login button
+- If you want, and need, to delete the volumes, `docker compose down -v` isn't gonna cut it. Instead, run the following commands:
+```
+docker compose down
+sudo rm -rf /api-data
+```
 
 ## Screenshots
 
