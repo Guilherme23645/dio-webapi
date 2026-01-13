@@ -7,10 +7,12 @@ secrets:
 services:
   db:
     image: postgres:17-alpine
+    secrets:
+      - pg_password
     container_name: api-db
     restart: unless-stopped
     environment:
-      POSTGRES_PASSWORD: /run/secrets/pg_password
+      POSTGRES_PASSWORD_FILE: /run/secrets/pg_password
       POSTGRES_DB: client_database
     volumes:
       - /api-data:/var/lib/postgresql/data
@@ -19,6 +21,8 @@ services:
       interval: 10s
       timeout: 5s
       retries: 5
+    ports:
+      - "5432:5432"
 
   adminer:
     image: adminer
