@@ -14,13 +14,15 @@ REST API for CEPs (brazilian postal codes) that consumes an external API, ViaCEP
 
 ## Pre-requisites
 
+- Git
 - Java Development Kit (JDK) version 21
 - Docker Compose
 
-*Note: If you're not in a Linux environment, you can install PostgreSQL and a UI database platform locally.*
-
 ## Instructions
 
+- Clone the repository with one of the following commands:
+  - **HTTPS:** `git clone https://github.com/Guilherme23645/dio-webapi.git`
+  - **SSH:** `git clone git@github.com:Guilherme23645/dio-webapi.git`
 - Before running the app, create a pg_password.txt file on the directory's root and write the password of your choice in it. This will be your secret for the app and the containers.
 - Execute the local running script with this set of commands:
 ```
@@ -58,3 +60,8 @@ sudo rm -rf /api-data
 ### Adminer
 
 <img width="1280" height="864" alt="image" src="https://github.com/user-attachments/assets/ae4bebbe-2bcb-45ec-8633-14b6b1e40a10" />
+
+## Notes
+
+- Note: If you're not in a Linux environment, you can install PostgreSQL and a UI database platform locally.
+- Raise an issue or pull request if you ran into any trouble while executing this application
