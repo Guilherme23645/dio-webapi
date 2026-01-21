@@ -65,3 +65,4 @@ sudo rm -rf /api-data
 
 - Note: If you're not in a Linux environment, you can install PostgreSQL and a UI database platform locally.
 - Raise an issue or pull request if you ran into any trouble while executing this application
+- The application is runs at port 8081 because I used VS Code CDE (Cloud Development Environment) running at port 8080. You can just change the application.properties file located in src/main/resources by removing the specific port lines to run the default 8080.
